@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, Alert, StyleSheet } from "reac
 import { useRouter, useLocalSearchParams } from "expo-router";
 import axios from "axios";
 
-const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || "http://172.20.10.3:3000";
+const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || "http://172.20.10.3:4002";
 
 export default function OTP() {
   const router = useRouter();
@@ -51,8 +51,8 @@ export default function OTP() {
         }
 
         console.log("Creating user with data:", { name, email, mobile, password: "***" });
-        
-        const createUserRes = await axios.post(`${API_BASE_URL}/register`, {
+
+        const createUserRes = await axios.post(`http://172.20.10.3:4003/register`, {
           name: name.toString(),
           email: email.toString(),
           mobile: mobile.toString(),

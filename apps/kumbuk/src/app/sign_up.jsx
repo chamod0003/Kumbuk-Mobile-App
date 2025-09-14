@@ -13,7 +13,7 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const API_BASE_URL = "http://172.20.10.3:3000";
+  const API_BASE_URL = "http://172.20.10.3:4002";
 
   const onSignUpPress = async () => {
     if (!name?.trim() || !email?.trim() || !mobile?.trim() || !password?.trim()) {
