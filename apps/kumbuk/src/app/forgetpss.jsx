@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, Alert } fro
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useRouter } from "expo-router";
 import { sendPasswordResetEmail } from "firebase/auth";
-import { auth } from "../../firebaseConfig"; // Make sure firebaseConfig.js exports auth
+import { auth } from "../../firebaseConfig"; 
 
 export default function ForgetPassword() {
   const router = useRouter();
