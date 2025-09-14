@@ -12,7 +12,7 @@ import {
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useRouter } from "expo-router";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebaseConfig"; // Your Firebase Auth config
+import { auth } from "../../firebaseConfig"; 
 
 export default function SignIn() {
   const router = useRouter(); 

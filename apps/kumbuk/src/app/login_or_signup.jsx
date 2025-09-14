@@ -9,7 +9,6 @@ export default function Login_or_signup() {
     <View style={{ flex: 1, backgroundColor: "#fffefeff" }}>
       <Pressable>
         <View>
-          {/* Background Image */}
           <Image
             source={require("../../assets/images/Group9.png")}
             style={{
